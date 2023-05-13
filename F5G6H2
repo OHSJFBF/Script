@@ -1,0 +1,117 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Spotify Hub, "DarkTheme")
+
+local Main = Window:NewTab("Main")
+
+local MainSection = Main:NewSection("Main")
+
+rSection:NewButton("SuperMan", "Info", function()
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+
+game.Players.LocalPlayer.Character.Humanoid.FOV = 120
+
+end)
+
+MainSection:NewButton("Inf", "No Jump Delay", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+    if InfiniteJumpEnabled then
+
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+    end
+
+end)
+
+end)
+
+MainSection:NewButton("Legend", "Teleport", function()
+
+    _G.Sonic = true  --false = Off // true = On
+
+_G.Rebirth = true --false = Off // true = On [AutoRebirth]
+
+loadstring(game:HttpGet("https://gist.githubusercontent.com/LimurTempest/34d9c78e6090e5e683402e81b8a8a722/raw/a36b6f0667e34feb5d0e4af30c14bc82682d0fac/SonicRedesign_LegendsOfSpeed", true))()
+
+end)
+
+MainSection:NewButton("InfYield", "Troll", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("TestHub", "DarkTheme")
+
+local r = Window:NewTab("r")
+
+local rSection = r:NewSection("r")
+
+MainSection:NewButton("SuperMan", "Info", function()
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+
+game.Players.LocalPlayer.Character.Humanoid.FOV = 120
+
+end)
+
+MainSection:NewButton("Inf", "No Jump Delay", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+    if InfiniteJumpEnabled then
+
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+    end
+
+end)
+
+end)
+
+MainSection:NewButton("Legend", "Teleport", function()
+
+    _G.Sonic = true  --false = Off // true = On
+
+_G.Rebirth = true --false = Off // true = On [AutoRebirth]
+
+loadstring(game:HttpGet("https://gist.githubusercontent.com/LimurTempest/34d9c78e6090e5e683402e81b8a8a722/raw/a36b6f0667e34feb5d0e4af30c14bc82682d0fac/SonicRedesign_LegendsOfSpeed", true))()
+
+end)
+
+rSection:NewButton("InfYield", "Troll", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+rSection:NewButton("Lumber Tycoon 2", "Butter Hub", function()
+
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DragonDupe/Subscribe/main/Butter-For-Mobile"))()
+
+end)
+
+MainSection:NewButton("PotHub", "Smexy", function()
+
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/Tubers39/6324c8bc8800c3ede3306095085401ae/raw/b16a421c9a1a50ab819b23743ac056604d0927e0/PoTHUB", true))()
+
+end)
+
+MainSection:NewButton("Break In Story", "Give All Item", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/HHubmega/master/BreakIn", true))()
+
+end)
