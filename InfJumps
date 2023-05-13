@@ -1,0 +1,33 @@
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Infinite Jumps";
+
+    Text = "Made By ShikileYT"; -- what the text says (ofc)
+
+    Duration = 30;
+
+})
+
+wait(1)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Enjoy";
+
+    Text = "Don't Forget to Subscribe Shikile"; -- what the text says (ofc)
+
+    Duration = 25;
+
+})
